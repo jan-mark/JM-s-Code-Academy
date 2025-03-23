@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP - JM's Code Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="php.css">
+    <link rel="icon" href="lang/php.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="lang/php.svg" alt="My Logo"onclick="window.location.href='index.html'">
+            <h1>JM's Code Academy</h1>
+            <ul class="listing">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="c-lang.html">C Language</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a href="Html.html">HTML</a></li>
+                <li><a href="js.html">JavaScript</a></li>
+                <li><a href="php.html">PHP</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="php-container">
+        <aside class="sidebar">
+            <h2>PHP Topics</h2>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#syntax">Basic Syntax</a></li>
+                <li><a href="#variables">Variables & Data Types</a></li>
+                <li><a href="#operators">Operators</a></li>
+                <li><a href="#loops">Loops</a></li>
+            </ul>
+        </aside>
+
+        <div class="content">
+            <section id="intro" class="topic">
+                <h1>Introduction to PHP</h1>
+                <p>PHP (Hypertext Preprocessor) is a server-side scripting language used to build dynamic websites and web applications. It allows developers to create dynamic and interactive websites, process form data, manage sessions, and interact with databases like MySQL. PHP is often used in content management systems (CMS) like WordPress.</p>
+            </section>
+
+            <section id="syntax" class="topic">
+                <h1>Basic Syntax of PHP</h1>
+                <p>PHP code is embedded within HTML and starts with `&lt;?php` and ends with `?&gt;`.</p>
+                <pre><code>
+&lt;?php
+    echo "Hello, World!";
+?&gt;
+                </code></pre>
+            </section>
+
+            <section id="variables" class="topic">
+                <h1>Variables and Data Types</h1>
+                <p>PHP variables start with a `$` symbol and do not require explicit data types.</p>
+                <pre><code>
+$age = 25;         // Integer
+$price = 99.99;    // Float
+$name = "JM";      // String
+$is_logged_in = true;  // Boolean
+                </code></pre>
+            </section>
+
+            <section id="operators" class="topic">
+                <h1>Operators in PHP</h1>
+                <p>PHP supports various operators:</p>
+                <ul>
+                    <li><strong>Arithmetic:</strong> `+`, `-`, `*`, `/`, `%`</li>
+                    <li><strong>Comparison:</strong> `==`, `!=`, `>`, `<`, `>=`, `<=`</li>
+                    <li><strong>Logical:</strong> `&&`, `||`, `!`</li>
+                </ul>
+                <pre><code>
+$x = 5 + 3;  // Addition
+$is_equal = ($x == 8);  // Comparison
+                </code></pre>
+            </section>
+
+            <section id="loops" class="topic">
+                <h1>Loops in PHP</h1>
+                <p>PHP provides `for`, `while`, and `foreach` loops.</p>
+                <pre><code>
+for ($i = 1; $i <= 5; $i++) {
+    echo $i . " ";  // Prints numbers 1 to 5
+}
+                </code></pre>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="social-links">
+                <a href="https://www.facebook.com/markyeoj.manidlangan" target="_blank"><i class="fab fa-facebook"></i></a>   
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>   
+                <a href="https://www.instagram.com/jannn_mark/" target="_blank"><i class="fab fa-instagram"></i></a>  
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <ul class="listing">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+            </ul>
+            <p>© 2025 JM's Code Academy. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

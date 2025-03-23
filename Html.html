@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - JM's Code Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="html.css">
+    <link rel="icon" href="lang/html.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="lang/html.png" alt="My Logo" onclick="window.location.href='index.html'">
+            <h1>JM's Code Academy</h1>
+            <ul class="listing">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="c-lang.html">C Language</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a href="Html.html">HTML</a></li>
+                <li><a href="js.html">JavaScript</a></li>
+                <li><a href="php.html">PHP</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="html-container">
+        <aside class="sidebar">
+            <h2>HTML Topics</h2>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#elements">HTML Elements</a></li>
+                <li><a href="#attributes">HTML Attributes</a></li>
+                <li><a href="#forms">HTML Forms</a></li>
+                <li><a href="#tables">HTML Tables</a></li>
+            </ul>
+        </aside>
+
+        <div class="content">
+            <section id="intro" class="topic">
+                <h1>Introduction to HTML</h1>
+                <h3>HTML (HyperText Markup Language) is the standard language used to create web pages.HTML defines the elements of a webpage, such as text, images, links, and multimedia, forming the foundation of web development. It works alongside CSS and JavaScript to enhance the design and functionality of websites.</h3>
+            </section>
+
+            <section id="elements" class="topic">
+                <h1>HTML Elements</h1>
+                <h3>HTML elements define the structure of a webpage. </h3>
+                <h3>Example:</h3>
+                <pre><code>
+&lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+                </code></pre>
+            </section>
+
+            <section id="attributes" class="topic">
+                <h1>HTML Attributes</h1>
+                <h3>Attributes provide additional information about elements.</h3>
+                <h3>Example:</h3>
+                <pre><code>
+&lt;a href="https://www.google.com" target="_blank"&gt;Visit Google&lt;/a&gt;
+                </code></pre>
+            </section>
+
+            <section id="forms" class="topic">
+                <h1>HTML Forms</h1>
+                <h3>Forms collect user input.</h3>
+                <h3>Example:</h3>
+                <pre><code>
+&lt;form&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+                </code></pre>
+            </section>
+
+            <section id="tables" class="topic">
+                <h1>HTML Tables</h1>
+                <h3>Tables organize data in rows and columns.</h3>
+                <h3>Example:</h3>
+                <pre><code>
+&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                </code></pre>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="social-links">
+                <a href="https://www.facebook.com/markyeoj.manidlangan" target="_blank"><i class="fab fa-facebook"></i></a>   
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>   
+                <a href="https://www.instagram.com/jannn_mark/" target="_blank"><i class="fab fa-instagram"></i></a>  
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <ul class="listing">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+            </ul>
+            <p>© 2025 JM's Code Academy. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

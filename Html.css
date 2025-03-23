@@ -75,6 +75,101 @@ header h1 {
     text-shadow: 0px 0px 10px #ff00ff;
 }
 
+.html-container {
+    display: flex;
+}
+
+.html-container {
+    display: flex;
+    min-height: 100vh;
+    padding-top: 80px; 
+}
+
+.sidebar {
+    width: 250px;
+    background: #222;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 80px; 
+    left: 0;
+    overflow-y: auto; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #444;
+}
+
+.content {
+    flex-grow: 1;
+    margin-left: 270px; 
+    padding: 40px;
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: justify;
+}
+
+.content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.content h3{
+    text-align: justify;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+.topic {
+    display: none;
+    text-align: justify;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    color: white;
+    border-left: 10px solid #00ffcc;
+    background: #111;
+    box-shadow: 2px 2px 10px rgba(0, 255, 204, 0.2);
+}
+
+pre {
+    background: #222;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: monospace;
+    color: #00ffcc;
+}
+
 .page-content {
     flex: 1;
     display: flex;

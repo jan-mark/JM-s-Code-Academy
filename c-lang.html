@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Language - JM's Code Academy</title>
+    <link rel="stylesheet" href="c-lang.css">
+    <link rel="icon" href="lang/c-lang.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="lang/c-lang.png" alt="My Logo" onclick="window.location.href='index.html'">
+            <h1>JM's Code Academy</h1>
+            <ul class="listing">
+                <li><a href="index.html#home">HOME</a></li>
+                <li><a href="c-lang.html">C Language</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a href="Html.html">HTML</a></li>
+                <li><a href="js.html">JavaScript</a></li>
+                <li><a href="php.html">PHP</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="c-lang-container">
+        <aside class="sidebar">
+            <h2>C Language Topics</h2>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#syntax">Basic Syntax</a></li>
+                <li><a href="#variables">Variables & Data Types</a></li>
+               <li><a href="#operators">Operators</a></li>
+               <li><a href="#loops">Loops</a></li>
+            </ul>
+        </aside>
+
+        <div class="content">
+            <section id="intro" class="topic">
+                <h1>Introduction to C</h1>
+                <h3>C is a powerful and fast programming language created by Dennis Ritchie in 1972. It is widely used for building operating systems, software, and embedded systems. A low-level, general-purpose programming language that provides direct access to memory and hardware, making it efficient for system programming, embedded systems, and performance-critical applications. C is the foundation of many modern programming languages and is commonly used in operating systems and game development.</h3>
+            </section>
+
+            <section id="syntax" class="topic">
+                <h1>Basic Syntax of C</h1>
+                <p>
+                    - Every C program starts with `#include <stdio.h>`.<br>
+                    - The `main()` function is the entry point.<br>
+                    - Statements end with `;`.<br>
+                    - Curly braces `{}` define code blocks.
+                </p>
+                <pre>
+                <code>
+                #include <stdio.h>
+                int main() {
+                    printf("Hello, World!");
+                    return 0;
+                }
+                </code>
+                </pre>
+            </section>
+        
+            <section id="variables" class="topic">
+                <h1>Variables and Data Types</h1>
+                <p>
+                    Variables store values in memory. Common data types:<br>
+                    - `int` (whole numbers)<br>
+                    - `float` (decimal numbers)<br>
+                    - `char` (single character)<br>
+                    - `double` (large decimal numbers)
+                </p>
+                <pre>
+                <code>
+                int age = 20;
+                float price = 10.5;
+                char grade = 'A';
+                </code>
+                </pre>
+            </section>
+        
+            <section id="operators" class="topic">
+                <h1>Operators in C</h1>
+                <p>
+                    Operators perform operations on values.<br>
+                    - Arithmetic (`+`, `-`, `*`, `/`, `%`)<br>
+                    - Relational (`==`, `!=`, `>`, `<`, `>=`, `<=`)<br>
+                    - Logical (`&&`, `||`, `!`)
+                </p>
+                <pre>
+                <code>
+                int a = 10, b = 5;
+                int sum = a + b;   // Addition
+                int isEqual = (a == b);  // Relational Operator
+                </code>
+                </pre>
+            </section>
+        
+            <section id="loops" class="topic">
+                <h1>Loops in C</h1>
+                <p>
+                    Loops execute code multiple times:<br>
+                    1. For Loop - Runs a fixed number of times.<br>
+                    2. While Loop - Runs while a condition is true.<br>
+                    3. Do-While Loop - Runs at least once.
+                </p>
+                <pre>
+                <code>
+                for(int i = 1; i <= 5; i++) {
+                    printf("%d ", i);
+                }
+                </code>
+                </pre>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="social-links">
+                <a href="https://www.facebook.com/markyeoj.manidlangan" target="_blank"><i class="fab fa-facebook"></i></a>   
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>   
+                <a href="https://www.instagram.com/jannn_mark/" target="_blank"><i class="fab fa-instagram"></i></a>  
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <ul class="listing">
+                <li><a href="index.html#home">HOME</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+            </ul>
+            <p>© 2025 JM's Code Academy. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
