@@ -3,7 +3,7 @@ function maincontent(page){
 
 
     if (page == "home") {
-        window.location.href = 'index.html';
+        window.location.href = 'content.html';
     } else if (page == "about") {
         window.location.href = 'about.html';
     } else if (page == 'c-lang') {
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let password = document.getElementById("password").value;
 
             if (username && password) { 
-                window.location.href = "index.html"; 
+                window.location.href = "content.html"; 
             } else {
                 document.getElementById("error-message").textContent = "Please enter a username and password!";
             }

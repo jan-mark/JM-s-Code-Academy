@@ -3,109 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JM's Code Academy</title>
+    <title>Login - JM's Code Academy</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="icons/logo.png">
+    <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+    <div class="login-container">
+        <h2>Login to JM's Code Academy</h2>
+        <form id="loginForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
 
-    <header>
-        <div class="container">
-            <img src="icons/logo.png" alt="My Logo">
-            <h1>JM's Code Academy</h1>
-            <ul class="listing">
-                <li><a href="index.html#home">HOME</a></li>
-                <li><a href="c-lang.html">C Language</a></li>
-                <li><a href="python.html">Python</a></li>
-                <li><a href="Html.html">HTML</a></li>
-                <li><a href="js.html">JavaScript</a></li>
-                <li><a href="php.html">PHP</a></li>
-                <li><a href="index.html#about">ABOUT</a></li>
-                <li><a href="index.html#contact">CONTACT</a></li>
-            </ul>
-        </div>
-    </header>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
 
-    <div class="page-content">
-        <section id="home">
-            <h1>Welcome to JM Code Academy!</h1>
-            <h3>
-                Your journey into coding starts here! Learn the fundamentals of programming, build projects, and sharpen your skills—all in one place. Whether you're a beginner or leveling up, we’re here to guide you.</h3>
-                <h3>Start coding today!</h3>
-        </section>
-
-        <section id="c-lang">
-            <h1>C Language</h1>
-            <h3>C is a powerful and fast programming language created by Dennis Ritchie in 1972. It is widely used for building operating systems, software, and embedded systems. A low-level, general-purpose programming language that provides direct access to memory and hardware, making it efficient for system programming, embedded systems, and performance-critical applications. C is the foundation of many modern programming languages and is commonly used in operating systems and game development.</h3>
-        </section>
-
-        <section id="python">
-            <h1>Python</h1>
-            <h3>Python is a simple, powerful, and beginner-friendly programming language created by Guido van Rossum in 1991. A high-level, interpreted programming language known for its simple syntax and readability. It is widely used in web development, data science, artificial intelligence, automation, and software development. Python’s extensive libraries and frameworks make it a popular choice for beginners and professionals alike.</h3>
-        </section>
-
-        <section id="html">
-            <h1>HTML</h1>
-            <h3>HTML (HyperText Markup Language) is the standard language used to create web pages.HTML defines the elements of a webpage, such as text, images, links, and multimedia, forming the foundation of web development. It works alongside CSS and JavaScript to enhance the design and functionality of websites.</h3>
-        </section>
-
-        <section id="js">
-            <h1>JavaScript</h1>
-            <h3>JavaScript (JS) is a powerful programming language used to make websites interactive. It enables features like animations, real-time updates, interactive forms, and client-side validation. JavaScript works alongside HTML and CSS and can also be used for backend development with frameworks like Node.js.</h3>
-        </section>
-
-        <section id="php">
-            <h1>PHP</h1>
-            <h3>PHP (Hypertext Preprocessor) is a server-side scripting language used to build dynamic websites and web applications. It allows developers to create dynamic and interactive websites, process form data, manage sessions, and interact with databases like MySQL. PHP is often used in content management systems (CMS) like WordPress.</h3>
-        </section>
-
-        <section id="about">
-            <h1>About this page!</h1>
-            <h2>Welcome to JM Code Academy!</h2>
-               <h3>This page is designed to help you learn the fundamentals of programming. Whether you're a beginner or someone looking to expand your knowledge, JM Code Academy provides a place where you can explore different programming languages, including Python, C, HTML, PHP, and JavaScript.
-                This platform was created by John Mark to make coding more accessible and easier to understand. Here, you can build a strong foundation in programming and develop the skills needed for real-world applications.
-                Join us in unlocking the world of programming and start coding with confidence!</h3>
-        </section>
-
-        <section id="contact">
-            <h1>Contact JM's Code Academy</h1>
-            <h3>Have questions or need guidance? Im here to help! Reach out me anytime.</h3>
-    
-            <div class="contact-container">
-                <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="e301e044-8031-4cf3-98f5-4ed8863d8c7c">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email"  name="email" placeholder="Enter your email" required>
-
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
-
-                    <button type="submit">Send Message</button>
-                </form>
-             </div>
-        </section>
+            <button type="submit">Login</button>
+            <p id="error-message" class="error"></p>
+        </form>
     </div>
-
-    <footer>
-        <div class="footer">
-            <div class="social-links">
-                <a href="https://www.facebook.com/markyeoj.manidlangan" target="_blank"><i class="fab fa-facebook"></i></a>   
-                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>   
-                <a href="https://www.instagram.com/jannn_mark/" target="_blank"><i class="fab fa-instagram"></i></a>  
-                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-            </div>
-                <ul class="listing">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-            <p>© 2025 JM's Code Academy. All Rights Reserved</p>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
