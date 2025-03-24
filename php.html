@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP - JM's Code Academy</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="php.css">
     <link rel="icon" href="lang/php.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -28,7 +27,16 @@
     </header>
 
     <div class="php-container">
-        <aside class="sidebar">
+        <aside class="right-sidebar">
+            <h2>API Integration</h2>
+            <ul>
+                <li><a href="Random API Integration/index.html">Dog API</a></li>
+                <li><a href="Random API Integration/index.html">Cat API</a></li>
+                <li><a href="Random API Integration/index.html">Quotes API</a></li>
+            </ul>
+        </aside> 
+
+        <aside class="left-sidebar">
             <h2>PHP Topics</h2>
             <ul>
                 <li><a href="#intro">Introduction</a></li>
@@ -42,12 +50,12 @@
         <div class="content">
             <section id="intro" class="topic">
                 <h1>Introduction to PHP</h1>
-                <p>PHP (Hypertext Preprocessor) is a server-side scripting language used to build dynamic websites and web applications. It allows developers to create dynamic and interactive websites, process form data, manage sessions, and interact with databases like MySQL. PHP is often used in content management systems (CMS) like WordPress.</p>
+                <h3>PHP (Hypertext Preprocessor) is a server-side scripting language used to build dynamic websites and web applications. It allows developers to create dynamic and interactive websites, process form data, manage sessions, and interact with databases like MySQL. PHP is often used in content management systems (CMS) like WordPress.</h3>
             </section>
 
             <section id="syntax" class="topic">
                 <h1>Basic Syntax of PHP</h1>
-                <p>PHP code is embedded within HTML and starts with `&lt;?php` and ends with `?&gt;`.</p>
+                <h3>PHP code is embedded within HTML and starts with `&lt;?php` and ends with `?&gt;`.</h3>
                 <pre><code>
 &lt;?php
     echo "Hello, World!";
@@ -57,7 +65,7 @@
 
             <section id="variables" class="topic">
                 <h1>Variables and Data Types</h1>
-                <p>PHP variables start with a `$` symbol and do not require explicit data types.</p>
+                <h3>PHP variables start with a `$` symbol and do not require explicit data types.</h3>
                 <pre><code>
 $age = 25;         // Integer
 $price = 99.99;    // Float
@@ -68,7 +76,7 @@ $is_logged_in = true;  // Boolean
 
             <section id="operators" class="topic">
                 <h1>Operators in PHP</h1>
-                <p>PHP supports various operators:</p>
+                <h3>PHP supports various operators:</h3>
                 <ul>
                     <li><strong>Arithmetic:</strong> `+`, `-`, `*`, `/`, `%`</li>
                     <li><strong>Comparison:</strong> `==`, `!=`, `>`, `<`, `>=`, `<=`</li>
@@ -82,7 +90,7 @@ $is_equal = ($x == 8);  // Comparison
 
             <section id="loops" class="topic">
                 <h1>Loops in PHP</h1>
-                <p>PHP provides `for`, `while`, and `foreach` loops.</p>
+                <h3>PHP provides `for`, `while`, and `foreach` loops.</h3>
                 <pre><code>
 for ($i = 1; $i <= 5; $i++) {
     echo $i . " ";  // Prints numbers 1 to 5

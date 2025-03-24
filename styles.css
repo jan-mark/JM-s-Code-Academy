@@ -1,7 +1,7 @@
 body {
     background-color: #0d0d0d;
     color: #00ffcc;
-    font-family: 'Orbitron', monospace;
+    font-family: 'Orbitron', ;
     margin: 0;
     padding: 0;
     display: flex;
@@ -224,4 +224,44 @@ footer {
 
 .footer .social-links a:hover {
     transform: scale(1.2);
+}
+@media screen and (max-width: 1024px) {
+    .left-sidebar, .right-sidebar {
+        width: 200px;
+    }
+    .content {
+        margin-left: 220px;
+        margin-right: 220px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .left-sidebar, .right-sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+    }
+    .content {
+        margin: 0;
+        padding: 20px;
+    }
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .left-sidebar, .right-sidebar {
+        display: none;
+    }
+    .content {
+        width: 100%;
+        padding: 15px;
+    }
+    .listing {
+        flex-direction: column;
+        gap: 10px;
+    }
 }

@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById(topicId).style.display = "block"; 
     }
 
-    let sidebarLinks = document.querySelectorAll(".sidebar ul li a");
+    let sidebarLinks = document.querySelectorAll(".left-sidebar ul li a");
     sidebarLinks.forEach(link => {
         link.addEventListener("click", function (event) {
             event.preventDefault(); 
@@ -40,3 +40,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
     showTopic("intro");
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    let loginForm = document.getElementById("loginForm");
+
+    if (loginForm) {
+        loginForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            if (username && password) { 
+                window.location.href = "index.html"; 
+            } else {
+                document.getElementById("error-message").textContent = "Please enter a username and password!";
+            }
+        });
+    }
+});
+
+function cat() {
+    window.location.href = 'Random API Integration/index.html';
+}
+
+function dog() {
+    window.location.href = 'Random API Integration/index.html';
+}
+
+function quotes() {
+    window.location.href = 'Random API Integration/index.html';
+}
